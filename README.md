@@ -6,4 +6,5 @@ Documentation on [Hackaday.io](https://hackaday.io/project/28827-led-ring).
 
 Animation on [YouTube](https://www.youtube.com/embed/Tuk5kyZv42A).
 
-[Schema](./schema.png)
+# Schema
+![Schema](./schema.png)
