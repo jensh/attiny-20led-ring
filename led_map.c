@@ -21,15 +21,16 @@ void set_tri(uint8_t lo_hi, uint8_t in_out) {
 	portb = (PORTB & (~USED_BITS)) | (lo_hi & USED_BITS); // 0: lo, 1: hi
 
 	// Set registers
-	PORTB = portb;
+	PORTB = 0;
 	DDRB = ddrb;
+	PORTB = portb;
 }
 
 
 static
 void led_crow_inc(void) {
 	led_crow++;
-	if (led_crow > LED_MAP_ROWS) led_crow = 0;
+	if (led_crow >= LED_MAP_ROWS) led_crow = 0;
 }
 
 
